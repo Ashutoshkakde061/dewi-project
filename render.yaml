@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: dewi-project
+    env: docker
+    plan: free
+    region: oregon
+    dockerfilePath: ./Dockerfile
+    buildCommand: ""
+    startCommand: ""
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: false
+      - key: base64:fLPn0SKasrXewHoEJTSMZxceSVepDKtqxQT129wk1ts=
+        value: YOUR_APP_KEY_HERE
